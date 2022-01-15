@@ -1,0 +1,487 @@
+
+1) Dado cuatro numeros ingresados ordenar a la inversa 
+ List numeros=new ArrayList();
+     Double a=Math.random()*10;
+     Double b=Math.random()*10;
+     Double c=Math.random()*10;
+     Double d=Math.random()*10;
+     numeros.add(a);
+     numeros.add(b);
+     numeros.add(c);
+     numeros.add(d);
+     System.out.println(numeros);
+     
+      Collections.sort(numeros, Collections.reverseOrder());
+      System.out.println(numeros);
+     
+2)Dada 5 calificaciones devolver el promedio
+
+   int a=(int) Math.floor(Math.random()*10);
+     int b=(int) Math.floor(Math.random()*10);
+     int c=(int) Math.floor(Math.random()*10);
+     int d=(int) Math.floor(Math.random()*10);
+     int e=(int) Math.floor(Math.random()*10);
+     
+     System.out.println("Nota"+a);
+     System.out.println("Nota"+b);
+     System.out.println("Nota"+c);
+     System.out.println("Nota"+d);
+     System.out.println("Nota"+e); 
+     
+     int  promedio=(a+b+c+d+e)/5;
+         
+     System.out.println("Promedio final:"+promedio);
+  
+
+
+
+3)Dado un valor de horas de trabajo y un valor de horas trabajadas de un sueldo en bruto 
+
+
+int valorHoras=(int) Math.floor(Math.random()*(100-500+1)+500);
+     int horasTrabajadas=(int) Math.floor(Math.random()*(96-160+1)+160);
+     
+     sueldo(valorHoras,horasTrabajadas);
+  
+
+ private static void sueldo(int horas,int precio){
+     
+         Integer cobrar= horas*precio;
+         System.out.println("El sueldo es de:"+cobrar);
+     
+     }
+
+4)Calcular el cubo y el cuadrado de un int 
+
+private static void Ej3(int numero){
+         int cuadrado= numero*numero;
+         int cubo=cuadrado*numero;
+         System.out.println(cuadrado);
+         System.out.println(cubo);
+         
+     }
+
+
+     int numero=(int) Math.floor(Math.random()*10);
+     
+   
+     
+         System.out.println(numero);
+         Ej3(numero);
+
+
+
+
+
+5)
+    int base=(int) Math.floor(Math.random()*10);
+     int altura=(int) Math.floor(Math.random()*10);
+     
+     int superficie= base*altura;
+         System.out.println("Base:"+base);
+         System.out.println("Altura:"+altura);
+         System.out.println("Superficie:"+superficie);
+
+
+7)precio y precio menos el 15%
+
+   Double precio= Math.floor(Math.random()*100);
+     Double finalPrecio= precio-(precio*0.15);
+         System.out.println("Precio:"+precio);
+         System.out.println("Precio final:"+finalPrecio);
+
+
+8)Ver si precio supera los 15000
+
+ Double precio= Math.floor(Math.random()*100000);
+         System.out.println(precio);   
+         if (precio>15000) {
+             System.out.println("Precio supera lo estimado  ");
+             
+         } else {
+             System.out.println("Precio no supera lo estimado");
+         }
+     
+
+
+9)De 3 numeros sacar el total entre ellos y el promedio  
+
+
+ Double a= Math.floor(Math.random()*100);
+     Double b= Math.floor(Math.random()*100);
+     Double c= Math.floor(Math.random()*100);
+     
+         System.out.println(a);
+         System.out.println(b);
+         System.out.println(c);
+         
+         ejOcho(a,b,c);
+  private  static void ejOcho(Double a,Double b,Double c){
+         Double total=a+b+c;
+         Double promedio=total/3;
+         System.out.println("Total:"+total+"\n"+"Promedio:"+promedio);
+     }
+
+
+10)Dada una lista con 3 apellidos, ordenarla de forma alfabetica 
+
+    List apellidos=new ArrayList();
+     apellidos.add("Montoya");
+     apellidos.add("Aranguren");
+     apellidos.add("Delgado");
+     
+         System.out.println(apellidos);
+         Collections.sort(apellidos);
+         System.out.println(apellidos);
+
+
+----------------------------
+Selectivas 
+
+1)Dada la nota mostrar el aprobado si es mayor a 8
+
+
+  private static void mostrarNota(int calf){
+         if (calf>8) {
+             System.out.println("Aprobado con:"+calf);
+             
+         } else {
+             System.out.println("Desaprobado");
+         }
+
+    List apellidos=new ArrayList();
+     apellidos.add("Montoya");
+     apellidos.add("Aranguren");
+     apellidos.add("Delgado");
+     
+         System.out.println(apellidos);
+         Collections.sort(apellidos);
+         System.out.println(apellidos);
+
+
+
+2)Agregar un 15% si el sueldo es mayor a 35000 en caso contario mostrar
+
+
+   private static void Sueldos(int sueldo){
+         int extra=0;
+         if (sueldo>35000) {
+            extra=(int) (sueldo*0.15);
+            sueldo+=extra;
+             System.out.println("Se le aplico un aumento ");
+            
+            
+            
+         }else{
+             
+             System.out.println("Sueldo de:"+sueldo);
+         }
+
+ int sueldo=(int) Math.floor(Math.random()*100000);
+         System.out.println("Sueldo previo:"+sueldo);
+     Sueldos(sueldo);
+
+
+3) private static void SueldosDos(int sueldo){
+         
+           int extra=0;
+         if (sueldo<50000) {
+            extra=(int) (sueldo*0.3);
+            sueldo+=extra;
+             System.out.println("Se incremento el aumento del 30%");
+             System.out.println("Sueldo actual:"+sueldo);       
+
+         }
+            else{
+                   
+             extra=(int) (sueldo*0.15);
+             sueldo+=extra;
+             System.out.println("Sueldo actual:"+sueldo);       
+             System.out.println("Se le aplico un aumento del 15% ");
+                    }
+             
+     
+     }
+
+
+ int sueldo=(int) Math.floor(Math.random()*100000);
+         System.out.println("Sueldo previo:"+sueldo);
+     SueldosDos(sueldo);
+
+
+
+4) Definir paridad 
+
+
+  private static void paridad(int num){
+         int indicador=num%2;
+         if (indicador!=0) {
+             System.out.println("Es un numero impar");
+             
+         } else {
+             System.out.println("Es un numero par");
+         }
+     }
+
+
+
+
+
+ int num=(int) Math.floor(Math.random()*100000);
+         System.out.println("el numero es:"+num);
+         paridad(num);
+         
+
+
+5) Definir el signo 
+
+
+     private static void signo(int dia,int  mes){
+     
+           switch(mes){
+           
+               case 1:
+                   if (dia>=21){
+                       System.out.println("Acuario");
+                   }
+                   else{
+                       System.out.println("Capricornio");
+                   }
+                   break;
+               case 2:
+                   if (dia>=20) {
+                       System.out.println("Piscis");
+                       
+                   } else {
+                       System.out.println("Acuario");
+                   }
+                  //idem case para el resto de los meses  
+           }
+     
+     }
+
+   
+
+
+	int a=1;
+	int b=2;
+	signo(a,b);
+         
+
+
+
+
+
+
+6) Indicar si un numero es 1 2 3 retornado 100% caso contraroio retornar el numero 
+
+
+  private static  void retornar(int num){
+         
+         List<Integer>  numeros=Arrays.asList(1,2,3);
+         
+         boolean condicion=numeros.contains(num);
+         if(condicion){
+            
+            System.out.println("100%");
+         
+        }
+         else{
+                 System.out.println("El numero es:"+num);}
+         
+         
+     }
+
+
+
+
+7)Dada la tabla de categorias pasar los aumentos 
+
+ private static void CatAumento(int cat,int sueldo){
+         int aumento=0;
+         switch(cat){
+         
+             case 1:
+                 aumento+= sueldo*0.2;
+                 sueldo+=aumento;
+                 System.out.println("Sueldo:"+sueldo);
+                 break;
+             case 2:
+                 aumento+= sueldo*0.15;
+                 sueldo+=aumento;
+                 System.out.println("Sueldo:"+sueldo);
+                 break;
+         
+             case 3:
+                 aumento+= sueldo*0.1;
+                 sueldo+=aumento;
+                 System.out.println("Sueldo:"+sueldo);
+                 break; 
+             case 4:
+                 aumento+= sueldo*0.05;
+                 sueldo+=aumento;
+                 System.out.println("Sueldo:"+sueldo);
+                 break;
+             case 5:
+                 sueldo+=aumento;
+                 System.out.println("Sueldo:"+sueldo);
+                 break;   
+                 
+             default:
+                System.out.println("Numero mal ingresado");
+                 
+         }
+            
+                 
+         }
+
+ int cat=(int) Math.floor(Math.random()*(1-10+1)+10);
+     int sueldo=(int) Math.floor(Math.random()*(25000-100000+1)+100000);
+         System.out.println("Categoria:"+cat);
+         System.out.println("Sueldo previo al aumento:"+sueldo);
+     
+     CatAumento(cat,sueldo);
+
+
+8) Dados 3 numeros mostrarlo en descendetnte
+
+ List numeros=new ArrayList();
+     Double a=Math.random()*10;
+     Double b=Math.random()*10;
+     Double c=Math.random()*10;
+   
+     numeros.add(a);
+     numeros.add(b);
+     numeros.add(c);
+   
+     System.out.println(numeros);
+     
+      Collections.sort(numeros, Collections.reverseOrder());
+      System.out.println(numeros);
+
+
+9)
+
+ private static void signoValor(int num){
+     
+         
+         if (num>=0) {
+             if (num>0) {
+                 System.out.println("El numero es positivo");
+                 
+             } else {
+                 
+                 System.out.println("El numero es nulo");
+             }
+             
+         } else {
+             
+             System.out.println("El numero es negativo");
+         }
+         
+     }
+
+
+ int numero=-11;
+    signoValor(numero);
+
+
+10) Mayor de 3 numeros 
+
+
+private static void mayor(int numUno,int numDos ,int numTres){
+         
+            Integer mayor=numUno;
+        if (numDos>=numUno &&  numDos>=numTres){
+             mayor=numDos;
+
+        }
+        else if(numDos<numTres && numTres>=numUno){
+             mayor=numTres;
+                     }
+        else{
+             mayor=numUno;
+             }
+        System.out.println("El numero mayor es: "+mayor);
+
+         
+        } 
+    int a=(int)Math.floor(Math.random()*(1-10+1)+10);
+    int b=(int)Math.floor(Math.random()*(1-10+1)+10);
+    int c=(int)Math.floor(Math.random()*(1-10+1)+10);
+    
+    
+         System.out.println(a);
+         System.out.println(b);
+         System.out.println(c);
+         
+    mayor(a,b,c);
+
+
+------------------------------------------------------
+
+
+Estructuras Repetitivas
+
+1/2/3/4 Idem pero varia el numero 
+
+    for (int i = 1; i < 6; i++) {
+             System.out.println(i);
+             
+         }
+
+
+5)200 veces mostrar la palabra hola
+
+ for (int i = 1; i < 201; i++) {
+             System.out.println("hola");
+             
+         }
+
+6) Cuadrado de los primeros 30 numeros positivos 
+
+ for (int i = 1; i <31 ; i++) {
+             int cuadrado=i*i;
+             System.out.println("hola");
+             
+         }
+
+7)Multiplicacion de los 20 primeros naturales 
+
+   int acumulador=1;
+         for (int i = 1; i <20 ; i++) {
+             acumulador*=i;
+             System.out.println(acumulador);
+             
+         }
+
+
+20) Lanzar 100 veces una moneda y contar cuantas veces salio cara y cuantas cruz
+
+  private static void moneda(){
+         
+         int acumulador=0;
+         
+         int acumuladorCara=0;
+         
+         int acumuladorCruz=0;
+         
+         while(acumulador<100){
+             acumulador+=1;
+             int tiro=(int)Math.floor(Math.random()*(1-100+1)+100);
+             if (tiro<=50) {
+                 
+                 acumuladorCara+=1;
+                 
+             } else {
+                 
+                 acumuladorCruz+=1;
+             }
+         }
+         System.out.println("Cantidad de tiradas:"+acumulador);
+         System.out.println("Cantidad de tiradas cara:"+acumuladorCara);
+         System.out.println("Cantidad de tiradas cruz:"+acumuladorCruz);
+        }
+
+moneda()
+
